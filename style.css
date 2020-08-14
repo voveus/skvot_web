@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'FormulaCondensedBlack';
+    src: url('formula/FormulaCondensed-Black.otf')  format('truetype'), /* Safari, Android, iOS */;
+    font-weight: 800;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'FormulaCondensedBold';
+    src: url('formula/FormulaCondensed-Bold.otf')  format('truetype'), /* Safari, Android, iOS */;
+    font-weight: 600;
+    font-style: normal;    
+  }
+@font-face {
+    font-family: 'FormulaCondensedLight';
+    src: url('formula/FormulaCondensed-Light.otf')  format('truetype'), /* Safari, Android, iOS */;
+  }
+@font-face {
+    font-family: 'FormulaCondensedRegular';
+    src: url('formula/FormulaCondensed-Regular.otf')  format('truetype'), /* Safari, Android, iOS */
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -8,19 +29,66 @@
     background: transparent;
 }
 
+section {
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+}
+
+section:nth-child(2n) {
+    background-color: #fff;
+    color: #000;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding: 50px 155px;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+h1 {
+    padding: 130px 45px;
+    font-family: FormulaCondensedRegular;
+    font-size: 8.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h2 {
+    width: 40%;
+    font-size: 3em;
+    padding: 0 155px;
+}
+
 .title {
     padding: 100px 50px;
 }
 
-h1 {
-    font-size: 2em;
+.content-screen {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 155px;
+    height: calc(100vh - 200px);
 }
 
-h2 {
-    font-size: 1.5em;
+.content-screen:nth-child(3n) {
+    flex-direction: row-reverse;
 }
 
-.wrapper {
+.content-text {
+    font-size: 36px;
+}
+
+.content-image {
+    max-width: 530px;
+}
+
+
+
+/* .wrapper {
     background-color: #000;
     color: #fff;
     box-sizing: content-box;
@@ -42,4 +110,4 @@ h2 {
 
 .footer {
     padding: 100px 50px;
-}
+} */
