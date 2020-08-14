@@ -1,24 +1,3 @@
-@font-face {
-    font-family: 'FormulaCondensedBlack';
-    src: url('formula/FormulaCondensed-Black.otf')  format('truetype'), /* Safari, Android, iOS */;
-    font-weight: 800;
-    font-style: normal;
-  }
-@font-face {
-    font-family: 'FormulaCondensedBold';
-    src: url('formula/FormulaCondensed-Bold.otf')  format('truetype'), /* Safari, Android, iOS */;
-    font-weight: 600;
-    font-style: normal;    
-  }
-@font-face {
-    font-family: 'FormulaCondensedLight';
-    src: url('formula/FormulaCondensed-Light.otf')  format('truetype'), /* Safari, Android, iOS */;
-  }
-@font-face {
-    font-family: 'FormulaCondensedRegular';
-    src: url('formula/FormulaCondensed-Regular.otf')  format('truetype'), /* Safari, Android, iOS */
-  }
-
 * {
     margin: 0;
     padding: 0;
@@ -51,7 +30,6 @@ ul {
 
 h1 {
     padding: 130px 45px;
-    font-family: FormulaCondensedRegular;
     font-size: 8.2em;
     font-weight: 600;
     text-transform: uppercase;
@@ -59,8 +37,8 @@ h1 {
 
 h2 {
     width: 40%;
-    font-size: 3em;
     padding: 0 155px;
+    font-size: 3em;
 }
 
 .title {
@@ -70,8 +48,8 @@ h2 {
 .content-screen {
     display: flex;
     flex-direction: row;
-    padding: 100px 155px;
     height: calc(100vh - 200px);
+    padding: 100px 155px;
 }
 
 .content-screen:nth-child(3n) {
@@ -79,6 +57,7 @@ h2 {
 }
 
 .content-text {
+    width: 40%;
     font-size: 36px;
 }
 
