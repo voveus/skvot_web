@@ -1,3 +1,31 @@
+@font-face {
+    font-family: "Formula Condensed";
+    src: url("assets/fonts/FormulaCondensed-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Formula Condensed";
+    src: url("assets/fonts/FormulaCondensed-Black.otf");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Formula Condensed";
+    src: url("assets/fonts/FormulaCondensed-Bold.otf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Formula Condensed";
+    src: url("assets/fonts/FormulaCondensed-Light.otf");
+    font-weight: 300;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +37,8 @@
 }
 
 section {
-    height: 100vh;
+    font-family: "Formula Condensed";
+    /* height: 100vh; */
     background-color: #000;
     color: #fff;
 }
@@ -30,15 +59,17 @@ ul {
 
 h1 {
     padding: 130px 45px;
-    font-size: 8.2em;
+    font-size: 11em;
     font-weight: 600;
     text-transform: uppercase;
+    text-align: center;
 }
 
 h2 {
     width: 40%;
-    padding: 0 155px;
+    padding: 0 155px 50px;
     font-size: 3em;
+    font-weight: normal;
 }
 
 .title {
@@ -47,8 +78,9 @@ h2 {
 
 .content-screen {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    height: calc(100vh - 200px);
+    /* height: calc(100vh - 200px); */
     padding: 100px 155px;
 }
 
@@ -58,9 +90,24 @@ h2 {
 
 .content-text {
     width: 40%;
-    font-size: 36px;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.3;
 }
 
 .content-image {
+    display: flex;
+    flex-direction: column;
     max-width: 530px;
+}
+
+.image-title {
+    font-size: 4.5em;
+    font-weight: normal;
+}
+
+.image-caption {
+    display: inline-block;
+    padding-top: 10px;
+    font-weight: 300;
 }
