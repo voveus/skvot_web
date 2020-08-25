@@ -45,7 +45,7 @@ body {
     justify-content: space-around;
     height: 100vh;
     font-family: "Formula Condensed";
-    background: url('/assets/bg_trans_grid.png');
+    background: url("assets/bg_trans_grid.png");
 }
 
 .main-title {
