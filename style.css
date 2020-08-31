@@ -1,27 +1,27 @@
 @font-face {
     font-family: "Formula Condensed";
-    src: url("assets/fonts/FormulaCondensed-Regular.otf");
+    src: url("assets/fonts/FormulaCondensed-Regular.woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Formula Condensed";
-    src: url("assets/fonts/FormulaCondensed-Black.otf");
+    src: url("assets/fonts/FormulaCondensed-Black.woff2");
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Formula Condensed";
-    src: url("assets/fonts/FormulaCondensed-Bold.otf");
+    src: url("assets/fonts/FormulaCondensed-Bold.woff2");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Formula Condensed";
-    src: url("assets/fonts/FormulaCondensed-Light.otf");
+    src: url("assets/fonts/FormulaCondensed-Light.woff2");
     font-weight: 300;
     font-style: normal;
 }
