@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Formula Condensed";
+    src: url("../assets/fonts/FormulaCondensed-Regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Formula Condensed";
+    src: url("../assets/fonts/FormulaCondensed-Light.woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Formula Condensed";
+    background: url("../assets/bg_trans_grid.png");
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* margin: 0 -10px; */
+}
+
+.col {
+    padding: 0 30px;
+}
+
+.col-1 {
+    width: calc(100% / 6);
+}
+
+.col-2 {
+    width: calc(100% / 6 * 2);
+}
+
+.col-3 {
+    width: calc(100% / 6 * 3);
+}
+
+.col-4 {
+    width: calc(100% / 6 * 4);
+}
+
+.col-5 {
+    width: calc(100% / 6 * 5);
+}
+
+.col-6 {
+    width: calc(100% / 6 * 6);
+}
+
+.main-title {
+    font-size: 11em;
+    font-weight: 400;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body-parts-list {
+    padding-top: 125px;
+    font-size: 6em;
+}
+
+.body-part:hover {
+    cursor: pointer;
+}
+
+.gallery-section {
+    padding-top: 60px;
+}
+
+img:hover {
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+.gallery-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding-right: 30px;
+    font-size: 1.4em;
+}
