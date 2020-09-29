@@ -23,6 +23,23 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: calc(10 / 1440 * 100vw);
+}
+
+@media (max-width: 580px) {
+    html {
+        font-size: 4px;
+    }
+}
+
+@media (min-width: 1600px) {
+    html {
+        font-size: calc(10 / 1440 * 1600px);
+    }
+    
+}
+
 body {
     max-width: 1440px;
     font-family: "Formula Condensed";
@@ -38,7 +55,6 @@ a {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    /* margin: 0 -10px; */
 }
 
 .col {
@@ -69,16 +85,28 @@ a {
     width: calc(100% / 6 * 6);
 }
 
+@media (min-device-width: 581px) and (max-device-width: 1024px) {
+    .tablet-col {
+        width: calc(100% / 6 * 5);
+    }
+}
+
+@media (min-device-width: 375px) and (max-device-width: 580px) {
+    .mob-col {
+        width: calc(100% / 6 * 6);
+        padding: 0;
+    }
+}
+
+
 .main-title {
-    font-size: 11em;
+    font-size: 18.8rem;
     font-weight: 400;
 }
 
 .nav {
-    position: absolute;
-    right: 30px;
     padding-top: 35px;
-    font-size: 2.5em;
+    font-size: 3.6rem;
     list-style: none;
 }
 
@@ -96,9 +124,18 @@ li.active {
 }
 
 .body-parts-list {
-    padding-top: 125px;
-    font-size: 6em;
+    padding-top: 7rem;
+    font-size: 9.6rem;
+
 }
+@media (min-device-width: 375px) and (max-device-width: 1024px) {
+    .body-parts-list {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
 
 .body-part:hover {
     cursor: pointer;
@@ -118,12 +155,12 @@ li.active {
   }
 
 .gallery-section {
-    padding-top: 135px;
+    padding-top: 4rem;
 }
 
 .about-section {
     padding-top: 135px;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 img:hover {
@@ -137,13 +174,26 @@ img:hover {
     padding-top: 30px;
 }
 
+@media (min-device-width: 375px) and (max-device-width: 580px) {
+    .gallery-nav {
+        display: none;
+    }
+}
+
 .contact-section {
-    /* display: flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
-    padding-right: 30px; */
-    position: absolute;
-    right: 30px;
-    font-size: 1.4em;
+    padding-right: 30px;
+    /* position: absolute;
+    right: 30px; */
+    font-size: 2.2rem;
+}
+
+@media (max-width: 580px) {
+    .contact-section {
+        font-size: 4rem;
+        padding-top: 50px;
+    }
 }
