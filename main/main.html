@@ -94,37 +94,17 @@
                     </div>
                 </div> -->
                 <div class="gallery-nav">
-                    <button class="gallery-nav-prev embla__button embla__button--prev" type="button">
-                        <svg class="embla__button__svg" width="128" height="46" viewBox="0 0 128 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <button class="gallery-nav-prev" type="button">
+                        <svg width="128" height="46" viewBox="0 0 128 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.878677 25.1213C-0.292892 23.9497 -0.292892 22.0503 0.878677 20.8787L19.9706 1.7868C21.1421 0.615223 23.0416 0.615223 24.2132 1.7868C25.3848 2.95837 25.3848 4.85786 24.2132 6.02944L7.24264 23L24.2132 39.9706C25.3848 41.1421 25.3848 43.0416 24.2132 44.2132C23.0416 45.3848 21.1421 45.3848 19.9706 44.2132L0.878677 25.1213ZM128 26H3V20H128V26Z" fill="black"/>
                         </svg>
                     </button>
-                    <button class="gallery-nav-next embla__button embla__button--next" type="button">
-                        <svg class="embla__button__svg" width="128" height="46" viewBox="0 0 128 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <button class="gallery-nav-next" type="button">
+                        <svg width="128" height="46" viewBox="0 0 128 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M127.121 25.1213C128.293 23.9497 128.293 22.0503 127.121 20.8787L108.029 1.7868C106.858 0.615223 104.958 0.615223 103.787 1.7868C102.615 2.95837 102.615 4.85786 103.787 6.02944L120.757 23L103.787 39.9706C102.615 41.1421 102.615 43.0416 103.787 44.2132C104.958 45.3848 106.858 45.3848 108.029 44.2132L127.121 25.1213ZM0 26H125V20H0V26Z" fill="black"/>
                         </svg>                                
                     </button>
                 </div>
-
-                <button class="embla__button embla__button--prev" >
-                    <svg
-                      class="embla__button__svg"
-                      viewBox="137.718 -1.001 366.563 643.999"
-                    >
-                      <path
-                        d="M428.36 12.5c16.67-16.67 43.76-16.67 60.42 0 16.67 16.67 16.67 43.76 0 60.42L241.7 320c148.25 148.24 230.61 230.6 247.08 247.08 16.67 16.66 16.67 43.75 0 60.42-16.67 16.66-43.76 16.67-60.42 0-27.72-27.71-249.45-249.37-277.16-277.08a42.308 42.308 0 0 1-12.48-30.34c0-11.1 4.1-22.05 12.48-30.42C206.63 234.23 400.64 40.21 428.36 12.5z"
-                      ></path>
-                    </svg>
-                  </button>
-                  <button class="embla__button embla__button--next" type="button">
-                    <svg class="embla__button__svg" viewBox="0 0 238.003 238.003">
-                      <path
-                        d="M181.776 107.719L78.705 4.648c-6.198-6.198-16.273-6.198-22.47 0s-6.198 16.273 0 22.47l91.883 91.883-91.883 91.883c-6.198 6.198-6.198 16.273 0 22.47s16.273 6.198 22.47 0l103.071-103.039a15.741 15.741 0 0 0 4.64-11.283c0-4.13-1.526-8.199-4.64-11.313z"
-                      ></path>
-                    </svg>
-                  </button>
-
-
             </section>
         </div>
         <section class="contact-section col col-1">
@@ -135,15 +115,6 @@
         <script>
             var emblaNode = document.getElementById("embla");
             var embla = EmblaCarousel(emblaNode);
-            // const embla = EmblaCarousel(viewPort, { loop: false });
-            const wrap = document.querySelector(".embla");
-            // const viewPort = wrap.querySelector(".embla__viewport");
-            const prevBtn = wrap.querySelector(".embla__button--prev");
-            const nextBtn = wrap.querySelector(".embla__button--next");
-            const setupPrevNextBtns = (prevBtn, nextBtn, embla) => {
-                prevBtn.addEventListener('click', embla.scrollPrev, false);
-                nextBtn.addEventListener('click', embla.scrollNext, false);
-            };
         </script>
     </body>
 </html>
