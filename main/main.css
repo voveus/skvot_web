@@ -1,16 +1,3 @@
-.embla {
-    overflow: hidden;
-}
-
-.embla__container {
-    display: flex;
-}
-
-.embla__slide {
-    position: relative;
-    min-width: 100%;
-}
-
 @font-face {
     font-family: "Formula Condensed";
     src: url("../assets/fonts/FormulaCondensed-Regular.woff2");
@@ -56,7 +43,7 @@ html {
 body {
     max-width: 1440px;
     font-family: "Formula Condensed";
-    background: url("../assets/bg_trans_grid.png");
+    background: url("../assets/bg_trans_grid_green.png");
 }
 
 a {
